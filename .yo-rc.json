@@ -1,0 +1,17 @@
+{
+  "generator-xh": {
+    "config": {
+      "projectName": "X-Plosion",
+      "useBranding": true,
+      "extension": "html",
+      "reloader": "BrowserSync",
+      "server": true,
+      "cssPreprocessor": "LESS",
+      "ignoreDist": true,
+      "isWP": false,
+      "features": [
+        "useModernizr"
+      ]
+    }
+  }
+}

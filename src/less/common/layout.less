@@ -1,0 +1,105 @@
+
+// Common - Layout
+//------------------------------------------------------------------------------
+
+/* Container */
+html {
+  min-height: 100%;
+  background: #c9bba9;
+}
+
+body {
+  background: #eae2d7 url(../img/bg-main.png) repeat-x 0 0;
+}
+
+.container {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 40px 0;
+  &:extend(.clearfix);
+}
+
+/* Header */
+.header {
+  display: none;
+}
+
+.site-name {
+  width: 200px;
+  height: 50px;
+
+  span {
+    background: url(../img/common/logo.png) no-repeat;
+  }
+}
+
+
+/* Navigation */
+.navigation {
+  display: none;
+  li {
+
+  }
+  a {
+
+  }
+}
+
+/* Content */
+.content {
+  float: left;
+  width: 640px;
+  .main-content {
+    display: none;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  float: right;
+  width: 300px;
+}
+
+/* Footer */
+.footer {
+  clear: both;
+  overflow: hidden;
+  padding: 30px 0;
+  border: none;
+  border-top: 4px solid #bfb1a0;
+  font: normal 12px/21px @font-arial;
+  color: @color-brown;
+  background: #c9bba9;
+  .container {
+    padding: 0;
+  }
+  ul,
+  li,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: @color-brown;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .footer-nav {
+    float: right;
+    margin: 0 20px;
+    background: url(../img/border-dotted-brown-footer.png) repeat-y 0 0;
+    li {
+      float: left;
+      padding: 0 26px 0 25px;
+      list-style: none;
+      background: url(../img/border-dotted-brown-footer.png) repeat-y 100% 0;
+    }
+  }
+  .footer-copyright {
+    float: left;
+    margin: 0 20px;
+  }
+}

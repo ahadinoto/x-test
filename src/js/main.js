@@ -16,24 +16,26 @@
      * Init Function
      */
     init: function() {
-      // App.feature1();
-      // App.feature2();
+      App.newsPopup();
     },
 
     /**
-     * Custom feature 1
+     * News Popup
      */
-    feature1: function() {
-
-    },
-
-    /**
-     * Custom feature 2
-     */
-    feature2: function() {
-
+    newsPopup: function() {
+      $(document).ready(function(){
+        // $(".news-photo").colorbox();
+        $(".news-photo").colorbox({
+          open: true,
+          onComplete:function(){
+            // setTimeout($.colorbox.next, 500);
+            setTimeout(function(){
+              $.colorbox.next
+            },1500);
+          }
+        });
+      });
     }
-
   };
 
   $(function() {

@@ -1,0 +1,66 @@
+
+// News Area
+//------------------------------------------------------------------------------
+
+.news-area {
+	&:extend(.stdboxes);
+	&:extend(.clearfix);
+	section {
+		float: left;
+		width: 320px;
+		header {
+			padding: 20px;
+			border-bottom: 2px solid #e5e5e5;
+			-webkit-border-radius: 0 8px 0 0;
+			-moz-border-radius: 0 8px 0 0;
+			border-radius: 0 8px 0 0;
+			.background-image(linear-gradient(to bottom, #fb2e6d 0%,#e61052 100%));
+		}
+		&:first-child header {
+			-webkit-border-radius: 8px 0 0 0;
+			-moz-border-radius: 8px 0 0 0;
+			border-radius: 8px 0 0 0;
+		}
+		h2 {
+			font: bold 12px/15px @font-arial;
+			text-transform: uppercase;
+			color: @color-white;
+		}
+		h3 {
+			margin-left: -120px;
+			padding-bottom: 11px;
+			font: bold 13px/20px @font-arial;
+			color: #2a1f0f;
+			a {
+				color: #2a1f0f;
+			}
+		}
+		p {
+			padding-bottom: 7px;
+			font: normal 12px/20px @font-arial;
+			color: #97866f;
+		}
+		a.more {
+			display: inline-block;
+			padding: 0 22px 0 0;
+			font: normal 12px/20px @font-arial;
+			color: @color-red;
+			background: url(../img/ico-more-link.png) no-repeat 100% 5px;
+		}
+		ul {
+			padding: 20px 20px 8px 20px;
+		}
+		li {
+			padding: 4px 0 16px 120px;
+		}
+		img {
+			display: block;
+			float: left;
+			width: 100px;
+			height: 100px;
+			margin: 5px 0 0 -120px;
+			padding: 2px;
+			border: 1px solid #eae1d4;
+		}
+	}
+}

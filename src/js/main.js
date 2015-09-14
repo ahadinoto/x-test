@@ -24,14 +24,21 @@
      */
     newsPopup: function() {
       $(document).ready(function(){
-        // $(".news-photo").colorbox();
+
+        var countPhoto = $( ".news-photo" ).length;
+        var i = 0;
+
         $(".news-photo").colorbox({
           open: true,
-          onComplete:function(){
-            // setTimeout($.colorbox.next, 500);
-            setTimeout(function(){
-              $.colorbox.next
-            },1500);
+          closeButton: false,
+          current: "",
+          onComplete: function(){
+            if (i < countPhoto) {
+              window.setTimeout($.colorbox.next, 2000);
+              i += 1;
+            } else {
+              $.colorbox.close();
+            }
           }
         });
       });

@@ -8,23 +8,31 @@
 	section {
 		float: left;
 		width: 320px;
+		background: url(../img/border-dotted-brown.png) repeat-y 0 0;
 		header {
-			padding: 20px;
 			border-bottom: 2px solid #e5e5e5;
 			-webkit-border-radius: 0 8px 0 0;
 			-moz-border-radius: 0 8px 0 0;
 			border-radius: 0 8px 0 0;
 			.background-image(linear-gradient(to bottom, #fb2e6d 0%,#e61052 100%));
 		}
-		&:first-child header {
-			-webkit-border-radius: 8px 0 0 0;
-			-moz-border-radius: 8px 0 0 0;
-			border-radius: 8px 0 0 0;
+		&:first-child {
+			background: none;
+			header {
+				-webkit-border-radius: 8px 0 0 0;
+				-moz-border-radius: 8px 0 0 0;
+				border-radius: 8px 0 0 0;
+			}
+			h2 {
+				background: none;
+			}
 		}
 		h2 {
+			padding: 20px;
 			font: bold 12px/15px @font-arial;
 			text-transform: uppercase;
 			color: @color-white;
+			background: url(../img/border-dotted-white.png) repeat-y 0 0;
 		}
 		h3 {
 			margin-left: -120px;
